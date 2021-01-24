@@ -682,6 +682,13 @@ MP3Volume<a class="cmnd" id="MP3Volume"></a>|`0..100` = set Volume
 
 Command|Parameters
 :---|:---
+WcStream<a class="cmnd" id="WcStream"></a>|*Only for ESP32-Cam*<BR>`0` = stop stream<BR>`1` = start stream _(default)_
+WcResolution<a class="cmnd" id="WcResolution"></a>|*Only for ESP32-Cam*<BR>`0` = FRAMESIZE_96x96,  (96x96)<BR>`1` = FRAMESIZE_QQVGA2 (128x160)<BR>`2` = FRAMESIZE_QCIF (176x144)<BR>`3` = FRAMESIZE_HQVGA (240x176)<BR>`4` = FRAMESIZE_QVGA (320x24)<BR>`5` = FRAMESIZE_CIF (400x296)<BR>`6` = FRAMESIZE_VGA (640x480)<BR>`7` = FRAMESIZE_SVGA (800x600)<BR>`8` = FRAMESIZE_XGA (1024x768)<BR>`9` = FRAMESIZE_SXGA (1280x1024)<BR>`10` = FRAMESIZE_UXGA (1600x1200)
+WcMirror<a class="cmnd" id="WcMirror"></a>|*Only for ESP32-Cam*<BR>`0` = no mirror _(default)_<BR>`1` = yes 
+WcFlip<a class="cmnd" id="WcFlip"></a>|*Only for ESP32-Cam*<BR>`0` = no flip _(default)_<BR>`1` = yes 
+WcSaturation<a class="cmnd" id="WcSaturation"></a>|*Only for ESP32-Cam*<BR>picture saturation -2..2 
+WcContrast<a class="cmnd" id="WcContrast"></a>|*Only for ESP32-Cam*<BR>picture contrast -2..2 
+WcRtsp<a class="cmnd" id="WcRtsp"></a>|*Only for ESP32-Cam*<BR>`0` = disable RTSP server _(default)_<BR>`1` = enable
 Ethernet<a class="cmnd" id="ethernet"></a>|*Currently only for Olimex ESP32-PoE board*<BR>`0` = disable Ethernet<BR>`1` = enable Ethernet _(default)_
 EthAddress<a class="cmnd" id="ethaddress"></a>|Set ethernet address. *Currently only for Olimex ESP32-PoE board*<BR>`0..31` = PHYxx address
 EthClockMode<a class="cmnd" id="ethclockmode"></a>|Ethernet clock mode. *Currently only for Olimex ESP32-PoE board*<BR>`0` = ETH_CLOCK_GPIO0_IN *(default)*<BR>`1` = ETH_CLOCK_GPIO0_OUT <BR>`2` = ETH_CLOCK_GPIO16_OUT<BR>`3` = ETH_CLOCK_GPIO17_OUT
